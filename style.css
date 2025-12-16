@@ -1,0 +1,117 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+  padding: 0px;
+}
+/* this class specifies shape */
+.row {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+.row2 {
+  height: 100%;
+  width: 90%;
+  display: block;
+}
+.box1 {
+  height: calc(100% / 3);
+  width: 100%;
+}
+.box2 {
+  height: 50%;
+  width: 100%;
+}
+.box3 {
+  height: 50%;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  max-height: 96%;
+}
+h1 {
+  margin: 10%;
+  display: flex;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.clickable1 {
+  filter: brightness(50%) drop-shadow(5px 5px 5px);
+}
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(10px 10px 10px);
+  transform: scale(1.04);
+}
+.clickable1:active {
+  filter: drop-shadow(0px 0px 0px);
+  transform: scale(0.98);
+}
+/* these classes specify color */
+.green {
+  background-color: #2c9711;
+}
+.yellow {
+  background-color: #f4f814;
+}
+.purple {
+  background-color: #7319e7;
+}
+.red {
+  background-color: #eb2424;
+}
+.orange {
+  background-color: #eb660d;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: rgb(255, 255, 255);
+}
+/* styles if the screen is 600px or less */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+  }
+  .row {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  .row2 {
+    height: 40%;
+    width: 100%;
+    display: block;
+  }
+  .box1 {
+    height: 100%;
+    width: 100%;
+  }
+  .box2 {
+    height: 100%;
+    width: 100%;
+  }
+  .box3 {
+    display: none;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Gio Annotate example</title>
+  </head>
+  <body>
+    <!-- children of the body element -->
+    <div class="row grey">
+      <div class="box1 black center-content">
+        <img src="images/It movie.jpg" class="clickable1" id="1" onclick="It()" />
+      </div>
+      <div class="box1 black center-content">
+        <img
+          src="images/Trick R Treat movie.avif"
+          class="clickable1"
+          id="2"
+          onclick="TrickRTreat()"
+        />
+      </div>
+      <div class="box1 black center-content">
+        <img src="images/Paranormal movie.jpg" class="clickable1" id="3" onclick="ParanormalActivity()" />
+      </div>
+    </div>
+    <div class="row2 dark-grey">
+      <div class="box2 black center-content">
+        <img src="images/Horror movie background.jpg" id="darkness_image"/>
+        <iframe
+        class="hide"
+          id="myVideo"
+          width="560"
+          height="315"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="box3 dark-grey center-content">
+        <h1 id="changingbio">𝙲𝚕𝚒𝚌𝚔 𝚘𝚗 𝚝𝚑𝚎 𝚖𝚘𝚟𝚒𝚎 𝚝𝚘 𝚜𝚎𝚎 𝚝𝚑𝚎 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚊𝚗𝚍 𝚝𝚑𝚎 𝚟𝚒𝚍𝚎𝚘<h1>
+      </div>
+    </div>
+    <div class="row grey">
+      <div class="box1 black center-content">
+        <img src="images/The thing movie.webp" class="clickable1" id="4" onclick="TheThing()" />
+      </div>
+      <div class="box1 black center-content">
+        <img src="images/Halloween2018.jpg" class="clickable1" id="5" onclick="Halloween2018()"/>
+      </div>
+      <div class="box1 black center-content">
+        <img src="images/poltergeist movie.jpg" class="clickable1" id="6" onclick="Poltergeist()"/>
+      </div>
+    </div>
+    <!--row of children-->
+    <script src="script.js"></script>
+  </body>
+</html>
